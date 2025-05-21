@@ -4,8 +4,6 @@ public class Main {
         // Comment
 
         System.out.println("Hello World");
-        System.out.println("Hello World again");
-        System.out.println("My name is Hamza");
     }
 
 }
