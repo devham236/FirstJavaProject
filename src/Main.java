@@ -1,38 +1,20 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args){
-        //Madlibs Game
-        Scanner scanner = new Scanner(System.in);
+        // Arithmetic Operators
+        int x = 7;
+        int y = 2;
 
-        String adjective1;
-        String adjective2;
-        String adjective3;
-        String noun1;
-        String verb1;
+        int result;
 
-        System.out.print("Enter an adjective (description): ");
-        adjective1 = scanner.nextLine();
+        // result = x + y;
+        // result = x - y;
+        // result = x * y;
+        // result = x / y;
 
-        System.out.print("Enter a noun (animal or person): ");
-        noun1 = scanner.nextLine();
+        // result = x % y;
 
-        System.out.print("Enter an adjective (description): ");
-        adjective2 = scanner.nextLine();
-
-        System.out.print("Enter a verb ending with -ing (action): ");
-        verb1 = scanner.nextLine();
-
-        System.out.print("Enter an adjective (description): ");
-        adjective3 = scanner.nextLine();
-
-        System.out.print("\nToday i went to a " + adjective1 + " zoo.");
-        System.out.print(" In an exhibit, I saw a " + noun1 + ".");
-        System.out.print(" " + noun1 + " was " + adjective2 + " and " + verb1 + "!");
-        System.out.print(" I was " + adjective3 + "!");
-
-        scanner.close();
+        System.out.println();
     }
 
 }
