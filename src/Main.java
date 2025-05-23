@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        //Madlibs game
+        //Madlibs Game
         Scanner scanner = new Scanner(System.in);
 
         String adjective1;
