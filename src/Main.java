@@ -10,6 +10,7 @@ public class Main {
         double price;
         int amount;
         double total;
+        char currency = '€';
 
         System.out.print("What item would you like to buy?: ");
         item = scanner.nextLine();
@@ -23,7 +24,7 @@ public class Main {
         total = price * amount;
 
         System.out.print("\nYou have bought " + amount + " " + item + "/s");
-        System.out.print("\nYour total is $" + total);
+        System.out.print("\nYour total is " + total + currency);
 
         scanner.close();
     }
