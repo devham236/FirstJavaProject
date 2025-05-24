@@ -2,31 +2,16 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args){
-        // Shopping Cart Program
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        // if statements
+        int age = -1;
 
-        String item;
-        double price;
-        int amount;
-        double total;
-        char currency = '€';
-
-        System.out.print("What item would you like to buy?: ");
-        item = scanner.nextLine();
-
-        System.out.print("What is the price for each?: ");
-        price = scanner.nextDouble();
-
-        System.out.print("How many would you like?: ");
-        amount = scanner.nextInt();
-
-        total = price * amount;
-
-        System.out.print("\nYou have bought " + amount + " " + item + "/s");
-        System.out.print("\nYour total is " + total + currency);
-
-        scanner.close();
+        if (age >= 18){
+            System.out.println("You are an adult.");
+        } else if (age < 0) {
+            System.out.println("You havent been born yet.");
+        } else {
+            System.out.println("You are a child");
+        }
     }
-
 }
