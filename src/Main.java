@@ -1,17 +1,14 @@
-import java.util.Random;
-
 public class Main {
 
     public static void main(String[] args) {
-        // Random numbers
-        Random random = new Random();
+        // Math
 
-        boolean isHeads;
+        double result;
 
-        isHeads = random.nextBoolean();
+        result = Math.pow(2, 3);
 
-        // value is true or false
+        // raises the base "2" to the power of "3" --> 2^3
 
-        System.out.print(isHeads);
+        System.out.println(result);
     }
 }
