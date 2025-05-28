@@ -6,8 +6,10 @@ public class Main {
         double result;
 
         result = Math.pow(2, 3);
+        result = Math.abs(-5);
+        result = Math.sqrt(9);
+        result = Math.round(3.14);
 
-        // raises the base "2" to the power of "3" --> 2^3
 
         System.out.println(result);
     }
