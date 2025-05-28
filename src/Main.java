@@ -6,11 +6,13 @@ public class Main {
         // Random numbers
         Random random = new Random();
 
-        int number;
+        double number;
 
-        number = random.nextInt(1, 6);
-        // origin is inclusive --> number 1 can be the ranodm number
-        // bound is exclusive --> number 6 will be excluded
+        number = random.nextDouble();
+
+        // without specified origin and bound, it generates
+        // a random double between 0 and 1
+
 
         System.out.print(number);
     }
