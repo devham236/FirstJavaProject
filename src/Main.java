@@ -1,20 +1,26 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Math
+        // Math Exercise
+        // Hypothenuse --> c = Math.sqrt(a^2 + b^2)
 
+        Scanner scanner = new Scanner(System.in);
+        double sideA;
+        double sideB;
         double result;
 
-        result = Math.pow(2, 3);
-        result = Math.abs(-5);
-        result = Math.sqrt(9);
-        result = Math.round(3.14);
-        result = Math.ceil(3.14);
-        result = Math.floor(3.14);
-        result = Math.max(10, 20);
-        result = Math.min(10, 20);
+        System.out.print("Enter length of side A: ");
+        sideA = scanner.nextDouble();
 
+        System.out.print("Enter length of side B: ");
+        sideB = scanner.nextDouble();
 
-        System.out.println(result);
+        result = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+
+        System.out.println("Your Hypotenuse is: " + result);
+
+        scanner.close();
     }
 }
