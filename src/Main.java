@@ -5,20 +5,21 @@ public class Main {
     public static void main(String[] args) {
         // printf
 
-        double price1 = 9.99;
-        double price2 = 100.15;
-        double price3 = -54.01;
+        // %[width] --> align numbers with different number of digits
 
-        // %[flags] --> formats numbers to show more information
+        // 0x = zero padding, followed by hoch much zero padding --> 04 = 0001
+        // number = right justified padding, so that the numbers align on the righ side
+        // negative number = left justified padding, so numbers align on left side
 
-        // + = adds a plus before the double
-        // , = seperates every 1000 place with a comma
-        // ( = negative numbers are closes in ()
-        // space = display minus if negative, space if positive
+        int id1 = 1;
+        int id2 = 23;
+        int id3 = 456;
+        int id4 = 7890;
 
-        System.out.printf("% .1f\n", price1);
-        System.out.printf("% .2f\n", price2);
-        System.out.printf("% .3f\n", price3);
+        System.out.printf("%-4d\n", id1);
+        System.out.printf("%-4d\n", id2);
+        System.out.printf("%-4d\n", id3);
+        System.out.printf("%-4d\n", id4);
 
     }
 }
