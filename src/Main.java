@@ -3,23 +3,32 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // printf
+        // compound interest calculator
 
-        // %[width] --> align numbers with different number of digits
+        // R = P [1 + r/n]^nt
+        Scanner scanner = new Scanner(System.in);
+        double principal;
+        double rate;
+        int timesCompounded;
+        int years;
+        double result;
 
-        // 0x = zero padding, followed by hoch much zero padding --> 04 = 0001
-        // number = right justified padding, so that the numbers align on the righ side
-        // negative number = left justified padding, so numbers align on left side
+        System.out.print("Enter the principal amount (in €): ");
+        principal = scanner.nextDouble();
 
-        int id1 = 1;
-        int id2 = 23;
-        int id3 = 456;
-        int id4 = 7890;
+        System.out.print("Enter the interest rate (in %): ");
+        rate = scanner.nextDouble() / 100;
 
-        System.out.printf("%-4d\n", id1);
-        System.out.printf("%-4d\n", id2);
-        System.out.printf("%-4d\n", id3);
-        System.out.printf("%-4d\n", id4);
+        System.out.print("Enter the # of times compounded per year: ");
+        timesCompounded = scanner.nextInt();
 
+        System.out.print("Enter the # of years: ");
+        years = scanner.nextInt();
+
+        result = principal * Math.pow(1 + rate / timesCompounded, timesCompounded * years);
+
+        System.out.printf("The amount after %d year/s is: %,.2f€", years, result);
+
+        scanner.close();
     }
 }
