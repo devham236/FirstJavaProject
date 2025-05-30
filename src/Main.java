@@ -3,24 +3,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // Math Exercise
-        // Hypothenuse --> c = Math.sqrt(a^2 + b^2)
+        // printf
 
-        Scanner scanner = new Scanner(System.in);
-        double sideA;
-        double sideB;
-        double result;
+        String name = "Spongebob";
+        char firstLetter = 'S';
+        int age = 30;
+        double height = 60.5;
+        boolean isEmployed = true;
 
-        System.out.print("Enter length of side A: ");
-        sideA = scanner.nextDouble();
-
-        System.out.print("Enter length of side B: ");
-        sideB = scanner.nextDouble();
-
-        result = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
-
-        System.out.println("Your Hypotenuse is: " + result);
-
-        scanner.close();
+        // placeholder % followed by a specified character for the data type, s = String
+        System.out.printf("Hello %s", name);
     }
 }
