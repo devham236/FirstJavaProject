@@ -3,19 +3,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // String methods
-        String name = "Hamza Mirza";
+        // substrings
+        String email = "hamzamirza74@gmail.com";
+        String username = email.substring(0, email.indexOf("@"));
+        String domain = email.substring(13, email.length());
 
-        int length = name.length();
-        char letter = name.charAt(1);
-        int index = name.indexOf("a");
-        int lastIndex = name.lastIndexOf("a");
+        System.out.println(username); // --> hamzamirza74
+        System.out.println(domain); // --> gmail.com
 
-        name = name.toUpperCase();
-        name = name.toLowerCase();
-        name = name.trim();
-        name = name.replace("a", "e");
 
-        System.out.println(name.isEmpty());
     }
 }
