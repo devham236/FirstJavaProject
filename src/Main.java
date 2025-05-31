@@ -3,32 +3,35 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // compound interest calculator
+        // Nested if statement
 
-        // R = P [1 + r/n]^nt
-        Scanner scanner = new Scanner(System.in);
-        double principal;
-        double rate;
-        int timesCompounded;
-        int years;
-        double result;
+        boolean isStudent = true;
+        boolean isSenior = false;
+        double price = 9.99;
 
-        System.out.print("Enter the principal amount (in €): ");
-        principal = scanner.nextDouble();
+        if (isStudent) {
+            if (isSenior){
+                System.out.println("You get a senior discount of 20%");
+                System.out.println("You get a student discount of 10%");
+                price *= 0.7;
+            }
+            else {
+                System.out.println("You get a student discount of 10%");
+                price *= 0.9;
+            }
 
-        System.out.print("Enter the interest rate (in %): ");
-        rate = scanner.nextDouble() / 100;
+        }
+        else {
+            if (isSenior) {
+                System.out.println("You get a senior discount of 20%");
+                price *= 0.8;
+            }
+            else {
+                price *= 1;
+            }
+        }
 
-        System.out.print("Enter the # of times compounded per year: ");
-        timesCompounded = scanner.nextInt();
+        System.out.printf("The price of a ticket is: %.2f€", price);
 
-        System.out.print("Enter the # of years: ");
-        years = scanner.nextInt();
-
-        result = principal * Math.pow(1 + rate / timesCompounded, timesCompounded * years);
-
-        System.out.printf("The amount after %d year/s is: %,.2f€", years, result);
-
-        scanner.close();
     }
 }
