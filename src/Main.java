@@ -21,7 +21,7 @@ public class Main {
 
         convertedTemp = unit.equals("C") ? (temp - 32) * 5 / 9 : (temp * 9 / 5) + 32;
 
-        System.out.printf("Converted temperature: %.2f", convertedTemp);
+        System.out.printf("Converted temperature: %.2f°%s", convertedTemp, unit);
 
         scanner.close();
     }
