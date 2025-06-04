@@ -3,20 +3,26 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // ternary operator
+        // Temperature Converter
 
-        int score = 50;
-        String passOrFail = score > 60 ? "Pass": "Fail";
+        // °C -> °F       (°C * 9/5) + 32
+        // °F -> °C       (°F - 32) * 5/9
+        Scanner scanner = new Scanner(System.in);
 
-        int number = 4;
-        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
+        double temp;
+        double convertedTemp;
+        String unit;
 
-        int hours = 11;
-        String timeOfDay = (hours < 12) ? "AM" : "PM";
+        System.out.print("Enter the temperature: ");
+        temp = scanner.nextDouble();
 
-        int income = 30000;
-        double taxRate = income >= 40000 ? 0.25 : 0.15;
+        System.out.print("Convert to Celsius or Fahrenheit? (Press C or F): ");
+        unit = scanner.next().toUpperCase();
 
-        System.out.println(taxRate);
+        convertedTemp = unit.equals("C") ? (temp - 32) * 5 / 9 : (temp * 9 / 5) + 32;
+
+        System.out.printf("Converted temperature: %.2f", convertedTemp);
+
+        scanner.close();
     }
 }
