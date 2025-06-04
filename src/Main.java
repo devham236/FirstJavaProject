@@ -3,36 +3,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // weight converter
-        Scanner scanner = new Scanner(System.in);
-        int option;
-        double weight;
-        double result;
+        // ternary operator
 
-        System.out.println("Weight Conversion Programm");
-        System.out.println("1: Convert lbs to kg");
-        System.out.println("2: Convert kg to lbs");
+        int score = 50;
+        String passOrFail = score > 60 ? "Pass": "Fail";
 
-        System.out.print("Choose an option: ");
-        option = scanner.nextInt();
+        int number = 4;
+        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
 
-        if(option == 1) {
-            System.out.print("Enter the weight in lbs: ");
-            weight = scanner.nextDouble();
-            result = weight / 2.205;
-        }
-        else if (option == 2) {
-            System.out.print("Enter the weight in kg: ");
-            weight = scanner.nextDouble();
-            result = weight * 2.205;
-        }
-        else {
-            System.out.println("No valid option");
-            result = 0;
-        }
+        int hours = 11;
+        String timeOfDay = (hours < 12) ? "AM" : "PM";
 
-        System.out.printf("Your option is %d and your converted weight is: %.2f", option, result);
+        int income = 30000;
+        double taxRate = income >= 40000 ? 0.25 : 0.15;
 
-        scanner.close();
+        System.out.println(taxRate);
     }
 }
