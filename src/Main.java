@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // switch statemtents
+        // enhanced switch statemtents (Java14 feature)
 
         Scanner scanner = new Scanner(System.in);
 
