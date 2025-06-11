@@ -5,7 +5,12 @@ public class Main {
     public static void main(String[] args) {
         // switch statemtents
 
-        String day = "Pizza";
+        Scanner scanner = new Scanner(System.in);
+
+        String day;
+
+        System.out.print("What day is it today?: ");
+        day = scanner.nextLine();
 
         switch(day) {
             case "Monday" -> System.out.println("It is a weekday");
