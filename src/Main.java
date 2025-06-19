@@ -8,12 +8,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String response = "";
 
-        while(!response.equals("Q")){
+        do {
             System.out.print("You are playing a game");
             System.out.print("\nPress Q to quit: ");
 
             response = scanner.nextLine().toUpperCase();
-        }
+        }while(!response.equals("Q"));
 
         System.out.println("You have quit the game.");
 
