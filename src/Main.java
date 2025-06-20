@@ -4,14 +4,15 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         // methods
-
-        happyBirthday();
+        String name = "Hamza";
+        int age = 28;
+        happyBirthday(name, age);
     }
 
-    static void happyBirthday(){
+    static void happyBirthday(String name, int age){
         System.out.println("Happy Birthday to you!");
-        System.out.println("Happy Birthday dear you!");
-        System.out.println("You are x years old!");
+        System.out.printf("Happy Birthday dear %s!\n", name);
+        System.out.printf("You are %d years old!\n", age);
         System.out.println("Happy Birthday to you!\n");
     }
 }
