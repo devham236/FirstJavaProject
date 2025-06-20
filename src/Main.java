@@ -1,26 +1,52 @@
 import java.util.Scanner;
-import java.util.Random;
 
 public class Main {
-    // Java prefers variables with local scope, that is why 1 and 2 gets
-    // printed to the console.
-
-    // class scope
-    static int x = 3;
+    static Scanner scanner = new Scanner(System.in);
+    static double amount;
 
     public static void main(String[] args) {
-        // local scope
-        int x = 1;
+        // Banking Program
 
-        System.out.println(x);
+        int choice;
+        boolean isRunning = true;
+        double balance = 100;
 
-        doSomething();
+        while(isRunning) {
+            System.out.println("\nBANKING PROGRAM");
+            System.out.println("1. Show Balance");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
+
+            System.out.print("Enter your choice (1-4): ");
+            choice = scanner.nextInt();
+
+            switch(choice) {
+                case 1 -> System.out.printf("Balance: %.2f€", balance);
+                case 2 -> {
+                    balance = deposit(balance);
+                }
+                case 3 -> {
+                    balance = withdraw(balance);
+                }
+                case 4 -> isRunning = false;
+                default -> System.out.println("Invalid Choice!");
+            }
+        }
+
+
+        scanner.close();
     }
 
-    static void doSomething() {
-        // local scope
-        int x = 2;
+    static double deposit(double balance) {
+        System.out.print("Enter an amount to be deposited (€): ");
+        amount = scanner.nextDouble();
+        return balance + amount;
+    }
 
-        System.out.println(x);
+    static double withdraw(double balance) {
+        System.out.print("Enter an amount to be withdrawn (€): ");
+        amount = scanner.nextDouble();
+        return balance - amount;
     }
 }
