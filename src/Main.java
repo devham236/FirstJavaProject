@@ -22,13 +22,9 @@ public class Main {
             choice = scanner.nextInt();
 
             switch(choice) {
-                case 1 -> System.out.printf("Balance: %.2f€", balance);
-                case 2 -> {
-                    balance = deposit(balance);
-                }
-                case 3 -> {
-                    balance = withdraw(balance);
-                }
+                case 1 -> showBalance(balance);
+                case 2 -> balance = deposit(balance);
+                case 3 -> balance = withdraw(balance);
                 case 4 -> isRunning = false;
                 default -> System.out.println("Invalid Choice!");
             }
@@ -48,5 +44,9 @@ public class Main {
         System.out.print("Enter an amount to be withdrawn (€): ");
         amount = scanner.nextDouble();
         return balance - amount;
+    }
+
+    static void showBalance(double balance) {
+        System.out.printf("Your current balance: %.2f", balance);
     }
 }
