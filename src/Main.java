@@ -3,11 +3,18 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        // methods
-        System.out.println(verifyAge(17));
+        // overloaded methods = methods that share the same name
+        //                      but different parameters
+        //                      signature = name + parameters
+
+        System.out.println(add(1, 2, 3));
     }
 
-    static boolean verifyAge(int age) {
-        return age >= 18;
+    static double add(double a, double b){
+        return  a + b;
+    }
+
+    static double add(double a, double b, double c){
+        return  a + b + c;
     }
 }
