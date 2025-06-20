@@ -30,7 +30,7 @@ public class Main {
             }
         }
 
-
+        System.out.println("Thank you, have a nice day!");
         scanner.close();
     }
 
@@ -45,7 +45,7 @@ public class Main {
     }
 
     static double withdraw(double balance) {
-        System.out.print("Enter an amount to be withdrawn (€): ");
+        System.out.print("Enter an amount to withdraw (€): ");
         amount = scanner.nextDouble();
         return balance - amount;
     }
