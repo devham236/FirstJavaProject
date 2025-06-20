@@ -4,10 +4,10 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         // methods
-        System.out.print(squareNum(2));
+        System.out.println(verifyAge(17));
     }
 
-    static double squareNum(double number) {
-        return Math.pow(number, 2);
+    static boolean verifyAge(int age) {
+        return age >= 18;
     }
 }
