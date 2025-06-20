@@ -34,6 +34,10 @@ public class Main {
         scanner.close();
     }
 
+    static void showBalance(double balance) {
+        System.out.printf("Your current balance: %.2f€", balance);
+    }
+
     static double deposit(double balance) {
         System.out.print("Enter an amount to be deposited (€): ");
         amount = scanner.nextDouble();
@@ -46,7 +50,4 @@ public class Main {
         return balance - amount;
     }
 
-    static void showBalance(double balance) {
-        System.out.printf("Your current balance: %.2f€", balance);
-    }
 }
