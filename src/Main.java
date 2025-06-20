@@ -47,6 +47,6 @@ public class Main {
     }
 
     static void showBalance(double balance) {
-        System.out.printf("Your current balance: %.2f", balance);
+        System.out.printf("Your current balance: %.2f€", balance);
     }
 }
