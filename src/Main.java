@@ -5,6 +5,8 @@ public class Main {
         // arrays
         String[] fruits = {"apple", "banana", "orange"};
 
-        System.out.println(fruits[0]);
+        fruits[1] = "pineapple";
+
+        System.out.println(fruits[1]);
     }
 }
