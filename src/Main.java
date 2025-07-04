@@ -1,20 +1,20 @@
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Instead you should use the new keyword and initialize the foods array
-        // with an empty with 3 spaces or an array with the length of 3
-
+        // Enter user input into an array
         String[] foods = new String[3];
+        Scanner scanner = new Scanner(System.in);
 
-        foods[0] = "pizza";
-        foods[1] = "taco";
-        foods[2] = "hamburger";
+        for (int i = 0; i < foods.length; i++) {
+            System.out.print("Enter the foods you want: ");
+            foods[i] = scanner.next();
+        }
 
         for (String food : foods) {
             System.out.println(food);
         }
 
-        System.out.println(foods.length);
+        scanner.close();
     }
 }
