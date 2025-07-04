@@ -2,16 +2,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        // Empty arrays should not be initialized with empty brackets
-        // It doesnt mean you can add elements to it by selecting indeces
-        // and setting it to some value
-        // Empty brackets mean the arrays size is zero, which means you cannot assign
-        // spaces/indeces in the array to a value
+        // Instead you should use the new keyword and initialize the foods array
+        // with an empty with 3 spaces or an array with the length of 3
 
-        String[] foods = {};
+        String[] foods = new String[3];
 
         foods[0] = "pizza";
+        foods[1] = "taco";
+        foods[2] = "hamburger";
 
-        System.out.println(foods);
+        for (String food : foods) {
+            System.out.println(food);
+        }
+
+        System.out.println(foods.length);
     }
 }
