@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        String[] fruits = {"apple", "kiwi", "banana"};
-        String target = "pineapple";
-        boolean isFound = false;
+        Scanner scanner = new Scanner(System.in);
 
-        // String elements cant be compared using "target==fruits[i]" as this would
-        // compare the memory addresses of both strings
-        // to compare two string values you have to use the string method "equals()"
+        int[] numbers = {1, 2, 3, 4, 5};
+        boolean isFound = false;
+        String[] fruits = {"apple", "kiwi", "banana"};
+
+        System.out.print("Enter a fruit to search for: ");
+        String target = scanner.nextLine();
+
         for (int i = 0; i < fruits.length; i++) {
             if (fruits[i].equals(target)) {
                 System.out.printf("Element found at index: %d", i);
