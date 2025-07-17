@@ -10,7 +10,14 @@ public class Main {
         String[] meats = {"chicken", "pork", "beef", "fish"};
 
         // 2-Dimensional array containing all the arrays above
-        String[][] foods = {fruits, vegetables, meats};
+        // 2D arrays are structured in rows and columns
+        String[][] foods = {{"apple", "orange", "banana"},
+                            {"potato", "onion", "carrot"},
+                            {"chicken", "pork", "beef", "fish"}};
+
+        // First index selects row, second index select column
+        foods[0][2] = "watermelon";
+        foods[2][1] = "duck";
 
         for (String[] food : foods){
             for (String element : food){
