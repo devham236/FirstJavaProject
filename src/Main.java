@@ -15,7 +15,7 @@ public class Main {
                             {"potato", "onion", "carrot"},
                             {"chicken", "pork", "beef", "fish"}};
 
-        // First index selects row, second index select column
+        // First index selects row, second index selects column
         foods[0][2] = "watermelon";
         foods[2][1] = "duck";
 
