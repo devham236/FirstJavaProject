@@ -6,6 +6,6 @@ public class Main {
 
         // Create an array of questions
 
-        // Create an array of options
+        // Create a 2-dimensional array of options
     }
 }
