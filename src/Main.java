@@ -17,6 +17,6 @@ public class Main {
             // get a guess from the user
             // check the guess
 
-
+        // Display final score
     }
 }
