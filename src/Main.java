@@ -7,5 +7,7 @@ public class Main {
         // Create an array of questions
 
         // Create a 2-dimensional array of options
+
+        // Declare all neccessary variables
     }
 }
