@@ -30,11 +30,28 @@ public class Main {
         System.out.println("******************************");
 
         // Loop over arrays and display contents
+        for (int i = 0; i < questions.length; i++){
+            System.out.println(questions[i]);
             // display options
+            for (String option : options[i]){
+                System.out.println(option);
+            }
             // get a guess from the user
+            System.out.print("Enter your guess: ");
+            guess = scanner.nextInt();
+
             // check the guess
+            if(guess == answers[i]){
+                System.out.println("Correct!");
+                score++;
+            }
+            else {
+                System.out.println("Wrong!");
+            }
+        }
 
         // Display final score
+        System.out.printf("Your final score is: %d/%d", score, questions.length);
 
         scanner.close();
     }
