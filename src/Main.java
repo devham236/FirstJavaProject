@@ -18,13 +18,16 @@ public class Main {
                              {"1. Steve Jobs", "2. Bill Gates", "3. Alan Turing", "4. Charles Babbage"},
                              {"1. Cobol", "2. C", "3. Fortran", "4. Assembly"}};
 
-        // Declare all neccessary variables
+        // Declare all necessary variables
         int[] answers = {3, 1, 2, 4, 3};
         int score = 0;
         int guess;
         Scanner scanner = new Scanner(System.in);
 
         // Print a welcome message
+        System.out.println("******************************");
+        System.out.println("Welcome to the Java Quiz Game!");
+        System.out.println("******************************");
 
         // Loop over arrays and display contents
             // display options
