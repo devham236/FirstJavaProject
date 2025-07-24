@@ -19,6 +19,10 @@ public class Main {
                              {"1. Cobol", "2. C", "3. Fortran", "4. Assembly"}};
 
         // Declare all neccessary variables
+        int[] answers = {3, 1, 2, 4, 3};
+        int score = 0;
+        int guess;
+        Scanner scanner = new Scanner(System.in);
 
         // Print a welcome message
 
@@ -28,5 +32,7 @@ public class Main {
             // check the guess
 
         // Display final score
+
+        scanner.close();
     }
 }
