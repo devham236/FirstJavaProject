@@ -5,6 +5,11 @@ public class Main {
         // Quiz Game
 
         // Create an array of questions
+        String[] questions = {"What is the main function of a router?",
+                              "Which part of the computer is considered the brain?",
+                              "What year was facebook launched?", "" +
+                              "Who is known as the father of computers?",
+                              "What was the first programming language?"};
 
         // Create a 2-dimensional array of options
 
