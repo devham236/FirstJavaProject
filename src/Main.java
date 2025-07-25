@@ -16,5 +16,10 @@ public class Main {
 
         // Ask if player wants to play again
 
+        // create an array with all possible moves
+        // and a 2d array with all possible counter moves
+        // when player move and computer move is the same, then its a draw
+        // when player move is different from computer move, check if player wins or loses
+
     }
 }
