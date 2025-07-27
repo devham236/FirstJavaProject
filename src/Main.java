@@ -5,9 +5,10 @@ public class Main {
         // Rock Paper Scissors Game
         Scanner scanner = new Scanner(System.in);
         String[] moves = {"Rock", "Paper", "Scissors"};
-        String[][] counter = {{"Paper"},
-                              {"Scissors"},
-                              {"Rock"}};
+        String[][] counter = {{"Rock", "Paper", "Scissors"},
+                              {"Rock", "Paper", "Scissors"},
+                              {"Rock", "Paper", "Scissors"}
+                              };
 
         // rock > scissors
         // scissors > paper
