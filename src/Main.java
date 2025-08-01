@@ -21,6 +21,9 @@ public class Main {
             System.out.print("Invalid choice");
         }
 
+        computerChoice = choices[random.nextInt(3)];
+        System.out.printf("Computer choice: %s", computerChoice);
+
         scanner.close();
     }
 }
