@@ -5,6 +5,6 @@ public class Main {
         // Rock Paper Scissors Game
         Scanner scanner = new Scanner(System.in);
 
-
+        scanner.close();
     }
 }
