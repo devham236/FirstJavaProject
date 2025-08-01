@@ -12,6 +12,15 @@ public class Main {
         String computerChoice;
         String playAgain = "yes";
 
+        System.out.print("Enter your move (rock, paper, scissors): ");
+        playerChoice = scanner.nextLine().toLowerCase();
+
+        if (!playerChoice.equals("rock") &&
+                !playerChoice.equals("paper") &&
+                !playerChoice.equals("scissors")){
+            System.out.print("Invalid choice");
+        }
+
         scanner.close();
     }
 }
