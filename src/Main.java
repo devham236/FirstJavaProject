@@ -22,7 +22,20 @@ public class Main {
         }
 
         computerChoice = choices[random.nextInt(3)];
-        System.out.printf("Computer choice: %s", computerChoice);
+        System.out.println("Computer choice: " + computerChoice);
+
+        if (playerChoice.equals(computerChoice)){
+            System.out.println("It's a tie!");
+        } else if (playerChoice.equals("rock") && computerChoice.equals("scissors")) {
+            System.out.println("You win!");
+        } else if (playerChoice.equals("paper") && computerChoice.equals("rock")) {
+            System.out.println("You win!");
+        } else if (playerChoice.equals("scissors") && computerChoice.equals("paper")) {
+            System.out.println("You win!");
+        }
+        else {
+            System.out.print("You lose!");
+        }
 
         scanner.close();
     }
