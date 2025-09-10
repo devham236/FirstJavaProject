@@ -68,17 +68,11 @@ public class Main {
 
         }
 
-
-
-
-
-
-
-
-
         // Display exit message
+        System.out.println("Game Over! Your final balance is " + balance + "€");
 
         scanner.close();
+
     }
 
     static String[] spinRow() {
