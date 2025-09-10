@@ -19,8 +19,13 @@ public class Main {
         System.out.println("**********************");
 
         // Play if balance > 0
+        while (balance > 0){
+            // Enter bet amount
+            System.out.println("Current balance: " + balance + "€");
+            System.out.print("Place your bet amount: ");
+            bet = scanner.nextInt();
+        }
 
-        // Enter bet amount
 
             // Verify if bet > balance
 
