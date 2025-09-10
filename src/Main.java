@@ -19,23 +19,34 @@ public class Main {
         System.out.println("**********************");
 
         // Play if balance > 0
-        while (balance > 0){
+        while (balance > 0) {
             // Enter bet amount
             System.out.println("Current balance: " + balance + "€");
             System.out.print("Place your bet amount: ");
             bet = scanner.nextInt();
+            // Verify if bet > balance
+            if (bet > balance) {
+                System.out.println("Insufficient funds");
+                continue;
+            }
+            // Verify if bet > 0
+            else if (bet <= 0) {
+                System.out.println("Bet must be greater than 0");
+                continue;
+            }
+            // Subtract bet from balance
+            else {
+                balance -= bet;
+            }
         }
 
 
-            // Verify if bet > balance
 
-            // Verify if bet > 0
 
-            // Subtract bet from balance
 
-        // Spin row
+        // Spin row of symbols
 
-        // Print row
+        // Print row of symbols
 
         // Get payout
 
