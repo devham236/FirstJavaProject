@@ -13,6 +13,10 @@ public class Main {
         String[] row;
 
         // Display Welcome Message
+        System.out.println("**********************");
+        System.out.println("Welcome to Java Slots");
+        System.out.println("Symbols: 🍇🍉🍋🍍🍓");
+        System.out.println("**********************");
 
         // Play if balance > 0
 
