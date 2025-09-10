@@ -41,7 +41,9 @@ public class Main {
 
             // Spin row of symbols
             System.out.println("Spinning...");
-            spinRow();
+            row = spinRow();
+            // Print row of symbols
+            printRow(row);
         }
 
 
@@ -49,7 +51,6 @@ public class Main {
 
 
 
-        // Print row of symbols
 
         // Get payout
 
@@ -71,5 +72,11 @@ public class Main {
         }
 
         return row;
+    }
+
+    static void printRow(String[] row) {
+        System.out.println("**************");
+        System.out.println(" " + String.join(" | ", row));
+        System.out.println("**************");
     }
 }
