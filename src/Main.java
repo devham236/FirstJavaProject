@@ -11,6 +11,7 @@ public class Main {
         int bet;
         int payout;
         String[] row;
+        String playAgain;
 
         // Display Welcome Message
         System.out.println("**********************");
@@ -24,6 +25,7 @@ public class Main {
             System.out.println("Current balance: " + balance + "€");
             System.out.print("Place your bet amount: ");
             bet = scanner.nextInt();
+            scanner.nextLine();
             // Verify if bet > balance
             if (bet > balance) {
                 System.out.println("Insufficient funds");
@@ -55,6 +57,15 @@ public class Main {
             else {
                 System.out.println("Sorry, you lost this round");
             }
+
+            // Ask to play again
+            System.out.print("Do you want to play again? (Y/N): ");
+            playAgain = scanner.nextLine().toUpperCase();
+
+            if (!playAgain.equals("Y")) {
+                break;
+            }
+
         }
 
 
@@ -64,7 +75,6 @@ public class Main {
 
 
 
-        // Ask to play again
 
         // Display exit message
 
