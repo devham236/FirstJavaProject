@@ -6,6 +6,11 @@ public class Main {
         // Java Slot Machine
 
         // Declare all Variables
+        Scanner scanner = new Scanner(System.in);
+        int balance = 100;
+        int bet;
+        int payout;
+        String[] row;
 
         // Display Welcome Message
 
@@ -28,5 +33,7 @@ public class Main {
         // Ask to play again
 
         // Display exit message
+
+        scanner.close();
     }
 }
