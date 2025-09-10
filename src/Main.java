@@ -38,13 +38,16 @@ public class Main {
             else {
                 balance -= bet;
             }
+
+            // Spin row of symbols
+            System.out.println("Spinning...");
+            spinRow();
         }
 
 
 
 
 
-        // Spin row of symbols
 
         // Print row of symbols
 
@@ -55,5 +58,18 @@ public class Main {
         // Display exit message
 
         scanner.close();
+    }
+
+    static String[] spinRow() {
+        String[] symbols = {"🍇","🍉","🍋","🍍","🍓"};
+        String[] row = new String[3];
+
+        Random random = new Random();
+
+        for (int i = 0; i < 3; i++) {
+           row[i] = symbols[random.nextInt(0 ,symbols.length)];
+        }
+
+        return row;
     }
 }
